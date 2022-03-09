@@ -52,7 +52,7 @@ class TwelveDays {
 
     String verses(int startVerse, int endVerse) {
         StringBuilder sb = new StringBuilder();
-        for( int i = startVerse ;  i >= endVerse; i++ ){
+        for( int i = startVerse ;  i <= endVerse; i++ ){
             sb.append(verse(i));
             if(i != endVerse)
                 sb.append("\n");
